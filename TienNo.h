@@ -13,6 +13,7 @@ public:
 	void ganNgayMuonNo(string);
 	virtual void ganLaiSuat() = 0;
 	virtual double tinhTongNo() = 0;
-	virtual double tinhTongNoSauXThang(int x) = 0;
+	virtual double tinhTongNoSauXThang(int) = 0;
+	virtual double laiNoSauXThang(int) = 0;
 };
 #endif // !TienNo_h
