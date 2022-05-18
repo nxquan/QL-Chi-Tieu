@@ -9,7 +9,7 @@ private:
 	double laiSuat;
 public:
 	NoBaNam();
-	void ganLaiXuatNam(double);
+	void ganLaiSuat();
 	double tinhTongNo();
 	double tinhTongNoSauXThang(int);
 };
