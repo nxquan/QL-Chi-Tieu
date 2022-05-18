@@ -10,7 +10,7 @@ private:
 	vector<double>laiSuat;
 public:
 	NoNamRuoi();
-	void ganLaiSuatThang();
+	void ganLaiSuat();
 	double tinhTongNo();
 	double tinhTongNoSauXThang(int);
 };
