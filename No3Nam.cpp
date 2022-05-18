@@ -2,12 +2,12 @@
 
 NoBaNam::NoBaNam()
 {
-	this->laiSuat = 0;
+	this->laiSuat = 0.065;
 }
 
-void NoBaNam::ganLaiXuatNam(double laiSuat)
+void NoBaNam::ganLaiSuat()
 {
-	this->laiSuat = laiSuat;
+	this->laiSuat = 0.065;
 }
 
 double NoBaNam::tinhTongNo()
