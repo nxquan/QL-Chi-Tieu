@@ -37,3 +37,12 @@ double NoNamRuoi::tinhTongNoSauXThang(int x)
 	}
 	return tongNo;
 }
+
+double NoNamRuoi::laiNoSauXThang(int x)
+{
+	while (x < 0 || x>18) {
+		cout << "Thoi gian truyen vao khong hop le, nhap lai: ";
+		cin >> x;
+	}
+	return this->tinhTongNoSauXThang(x) - this->tienNoGoc;
+}
