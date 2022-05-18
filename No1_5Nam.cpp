@@ -8,7 +8,7 @@ NoNamRuoi::NoNamRuoi()
 	}
 }
 
-void NoNamRuoi::ganLaiSuatThang()
+void NoNamRuoi::ganLaiSuat()
 {
 	for (int i = 0; i < this->laiSuat.size(); i++) {
 		cout << "Nhap lai suat thang thu " << i + 1 << ": ";
