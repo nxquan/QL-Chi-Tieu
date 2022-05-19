@@ -12,5 +12,6 @@ public:
 	void ganLaiSuat();
 	double tinhTongNo();
 	double tinhTongNoSauXThang(int);
+	double laiNoSauXThang(int);
 };
 #endif // !NoBaNam_h
