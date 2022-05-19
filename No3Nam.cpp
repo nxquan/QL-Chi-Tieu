@@ -24,3 +24,12 @@ double NoBaNam::tinhTongNoSauXThang(int x)
 	double laiSuatThang = this->laiSuat / 12;
 	return this->tienNoGoc*pow((1+laiSuatThang),x);
 }
+
+double NoBaNam::laiNoSauXThang(int x)
+{
+	while (x < 0 || x>36) {
+		cout << "Thoi gian truyen vao khong hop le, nhap lai: ";
+		cin >> x;
+	}
+	return this->tinhTongNoSauXThang(x)-this->tienNoGoc;
+}
