@@ -10,7 +10,6 @@ private:
 	int thoiHan;
 	double tienGui;
 	double laiSuat;
-	double tienNhan;
 public:
 	TKTietKiem();
 	TKTietKiem(int, double, double);//thoiHan, laiSuat, tienGui
