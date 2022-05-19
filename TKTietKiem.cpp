@@ -5,7 +5,6 @@ TKTietKiem::TKTietKiem()
 	this->tienGui = 0;
 	this->laiSuat = 0;
 	this->thoiHan = 0;
-	this->tienNhan = 0;
 }
 
 TKTietKiem::TKTietKiem(int thoiHan, double laiSuat, double tienGui)
