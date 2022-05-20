@@ -16,6 +16,16 @@ void NoNamRuoi::ganLaiSuat()
 	}
 }
 
+void NoNamRuoi::nhapKhoanNo()
+{
+	cout << "Nhap khoan no 1.5 nam" << endl;
+	cout << "Nhap ngay muon: ";
+	getline(cin, this->ngayMuonNo);
+	cout << "Nhap so tien muon: ";
+	cin >> this->tienNoGoc;
+	this->ganLaiSuat();
+}
+
 double NoNamRuoi::tinhTongNo()
 {
 	double tongNo = this->tienNoGoc;
@@ -36,4 +46,13 @@ double NoNamRuoi::tinhTongNoSauXThang(int x)
 		tongNo += tongNo * this->laiSuat[i];
 	}
 	return tongNo;
+}
+
+double NoNamRuoi::laiNoSauXThang(int x)
+{
+	while (x < 0 || x>18) {
+		cout << "Thoi gian truyen vao khong hop le, nhap lai: ";
+		cin >> x;
+	}
+	return this->tinhTongNoSauXThang(x) - this->tienNoGoc;
 }

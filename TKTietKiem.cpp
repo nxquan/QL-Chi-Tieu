@@ -8,9 +8,9 @@ TKTietKiem::TKTietKiem()
 	this->soThangDaGui = 0;
 }
 
-TKTietKiem::TKTietKiem(int kiHan, double laiSuat, double tienGui)
+TKTietKiem::TKTietKiem(int thoiHan, double laiSuat, double tienGui)
 {
-	this->kiHan = kiHan;
+	this->kiHan = thoiHan;
 	this->laiSuat = laiSuat;
 	this->tienGui = tienGui;
 }
@@ -19,12 +19,15 @@ void TKTietKiem::ganTienGui(double tienGui)
 {
 	this->tienGui = tienGui;
 }
+void TKTietKiem::ganLaiSuat(double laiSuat)
+{
+	this->laiSuat = laiSuat;
+}
 
 double TKTietKiem::layTienGui()
 {
 	return this->tienGui;
 }
-
 int TKTietKiem::layKiHan()
 {
 	return this->kiHan;
@@ -35,15 +38,12 @@ int TKTietKiem::laySoThangDaGui()
 	return this->soThangDaGui;
 }
 
-void TKTietKiem::ganLaiSuat(double laiSuat)
-{
-	this->laiSuat = laiSuat;
-}
-
-
-double TKTietKiem::tatToanTKTietKiem()
+double TKTietKiem::tattoanTKTietKiem()
 {
 	return this->tienGui * this->laiSuat + this->tienGui;
 }
 
-TKTietKiem::~TKTietKiem(){}
+
+TKTietKiem::~TKTietKiem(){
+
+}

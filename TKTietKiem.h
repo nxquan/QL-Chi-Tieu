@@ -11,16 +11,18 @@ private:
 	double tienGui;
 	double laiSuat;
 	int soThangDaGui;
-
 public:
 	TKTietKiem();
-	TKTietKiem(int, double, double);
+	TKTietKiem(int, double, double);//kiHan, laiSuat, tienGui
+
 	void ganTienGui(double);
+	void ganLaiSuat(double);
+
 	double layTienGui();
 	int layKiHan();
 	int laySoThangDaGui();
-	void ganLaiSuat(double);
-	double tatToanTKTietKiem();
+
+	double tattoanTKTietKiem();
 	~TKTietKiem();
 };
 

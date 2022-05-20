@@ -14,6 +14,7 @@ private:
 public:
 	ChiTieu();
 	void nhapChiTieu();
+	void xuatChiTieu();
 	double tinhTongChiTieu();
 	~ChiTieu();
 };

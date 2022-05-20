@@ -10,7 +10,12 @@ private:
 public:
 	NoBaNam();
 	void ganLaiSuat();
+	void nhapKhoanNo();
 	double tinhTongNo();
 	double tinhTongNoSauXThang(int);
+	double laiNoSauXThang(int);
 };
 #endif // !NoBaNam_h
+
+
+

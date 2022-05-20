@@ -33,5 +33,11 @@ double ThuNhap::layThuNhapKhac()
 {
 	return this->thuNhapKhac;
 }
-
+void nhapThuNhap() {
+	
+}
+void ThuNhap::xuatThuNhap() {
+	cout << "+ Tong luong: " << this->luong << endl;
+	cout << "+ Thu nhap khac: " << this->thuNhapKhac << endl;
+}
 ThuNhap::~ThuNhap(){}

@@ -16,6 +16,9 @@ public:
 	void nhapThuNhapKhac();
 	double layLuong();
 	double layThuNhapKhac();
+
+	void xuatThuNhap();
+	void nhapThuNhap();
 	~ThuNhap();
 };
 

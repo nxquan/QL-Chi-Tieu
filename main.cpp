@@ -1,8 +1,14 @@
 ﻿
+#include "QLChiTieu.h"
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	QLChiTieu QL_Chi_Tieu;
+	QL_Chi_Tieu.xuLyQLChiTieu();
+
+	return 1;
+
 }
 
