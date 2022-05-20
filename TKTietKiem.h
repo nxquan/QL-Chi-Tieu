@@ -7,17 +7,20 @@ using namespace std;
 class TKTietKiem
 {
 private:
-	int thoiHan;
+	int kiHan;
 	double tienGui;
 	double laiSuat;
-	double tienNhan;
+	int soThangDaGui;
+
 public:
 	TKTietKiem();
-	TKTietKiem(int, double, double);//thoiHan, laiSuat, tienGui
+	TKTietKiem(int, double, double);
 	void ganTienGui(double);
 	double layTienGui();
+	int layKiHan();
+	int laySoThangDaGui();
 	void ganLaiSuat(double);
-	double tinhTienNhanDungKyHan();
+	double tatToanTKTietKiem();
 	~TKTietKiem();
 };
 
