@@ -24,7 +24,7 @@ public:
 	unsigned int layThang();
 	unsigned int layNam();
 
-	//thang = thang + 1
+	//thang += n
 	Date& tangThemThang(int);
 	void operator=(Date& d);
 	bool operator==(Date& d);
