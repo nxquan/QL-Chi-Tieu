@@ -25,8 +25,9 @@ public:
 	unsigned int layNam();
 
 	//thang = thang + 1
-	void tangThemThang();
-
+	Date& tangThemThang(int);
+	void operator=(Date& d);
+	bool operator==(Date& d);
 	friend istream& operator >> (istream& in, Date& d);
 	friend ostream& operator <<(ostream& out, Date& d);
 };

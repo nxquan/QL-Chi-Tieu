@@ -19,9 +19,11 @@ Date::~Date() {
 void Date::ganNgay(unsigned int ngay) {
 	this->ngay = ngay;
 }
+
 void Date::ganThang(unsigned int thang) {
 	this->thang = thang;	
 }
+
 void Date::ganNam(unsigned int nam) {
 	this->nam = nam;
 }
@@ -30,18 +32,31 @@ void Date::ganNam(unsigned int nam) {
 unsigned int Date::layNgay() {
 	return this->ngay;
 }
+
 unsigned int Date::layThang() {
 	return this->thang;
 }
+
 unsigned int Date::layNam() {
 	return this->nam;
 }
-void Date::tangThemThang() {
-	++this->thang;
-	if (this->thang == 13) {
-		this->thang = 1;
+
+Date& Date::tangThemThang(int n) {
+	this->thang += n;
+	if (this->thang > 12) {
+		this->thang -= 12;
 		++this->nam;
 	}
+	return *this;
+}
+
+void Date::operator=(Date& d) {
+	this->ngay = d.ngay;
+	this->thang = d.thang;
+	this->nam = d.nam;
+}
+bool Date::operator==(Date& d) {
+	return (this->ngay == d.ngay) && (this->thang == d.thang) && (this->nam == d.nam);
 }
 
 istream& operator >> (istream& in, Date& d) {
