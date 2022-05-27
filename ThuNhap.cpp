@@ -2,20 +2,24 @@
 
 ThuNhap::ThuNhap()
 {
-	this->luong = 0;
+	this->luongChong = 0;
+	this->luongVo = 0;
 	this->thuNhapKhac = 0;
 }
 
-ThuNhap::ThuNhap(double luong, double thuNhapKhac)
+ThuNhap::ThuNhap(double luongChong, double luongVo, double thuNhapKhac)
 {
-	this->luong = luong;
+	this->luongChong = luongChong;
+	this->luongVo = luongVo;
 	this->thuNhapKhac = thuNhapKhac;
 }
 
-void ThuNhap::nhapLuong()
+void ThuNhap::nhapLuongVoChong()
 {
-	cout << "Nhap tong luong 2 vo chong: ";
-	cin >> this->luong;
+	cout << "Nhap luong chong: ";
+	cin >> this->luongChong;
+	cout << "Nhap luong vo: ";
+	cin >> this->luongVo;
 }
 
 void ThuNhap::nhapThuNhapKhac()
@@ -24,20 +28,36 @@ void ThuNhap::nhapThuNhapKhac()
 	cin >> this->thuNhapKhac;
 }
 
-double ThuNhap::layLuong()
+double ThuNhap::layLuongChong()
 {
-	return this->luong;
+	return this->luongChong;
+}
+
+double ThuNhap::layLuongVo()
+{
+	return this->luongVo;
 }
 
 double ThuNhap::layThuNhapKhac()
 {
 	return this->thuNhapKhac;
 }
-void nhapThuNhap() {
-	
+
+double ThuNhap::tongLuongVoChong()
+{
+	return this->luongVo + this->luongChong;
 }
+
+void ThuNhap::nhapThuNhap()
+{
+	this->nhapLuongVoChong();
+	this->nhapThuNhapKhac();
+}
+
 void ThuNhap::xuatThuNhap() {
-	cout << "+ Tong luong: " << this->luong << " trieu vnd" << endl;
-	cout << "+ Thu nhap khac: " << this->thuNhapKhac << " trieu vnd" << endl;
+	cout << "+ Luong chong: " << this->luongChong << " Trieu" << endl;
+	cout << "+ Luong vo: " << this->luongVo << " Trieu" << endl;
+	cout << "+ Thu nhap khac: " << this->thuNhapKhac << " Trieu" << endl;
 }
+
 ThuNhap::~ThuNhap(){}
