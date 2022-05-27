@@ -11,9 +11,10 @@ public:
 	NoBaNam();
 	void ganLaiSuat();
 	void nhapKhoanNo();
-	double tinhTongNo();
+	//double tinhTongNo();
 	double tinhTongNoSauXThang(int);
 	double laiNoSauXThang(int);
+	void xuatThongTinNo();
 };
 #endif // !NoBaNam_h
 

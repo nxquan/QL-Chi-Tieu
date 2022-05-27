@@ -12,9 +12,10 @@ public:
 	NoNamRuoi();
 	void ganLaiSuat();
 	void nhapKhoanNo();
-	double tinhTongNo();
+	/*double tinhTongNo();*/
 	double tinhTongNoSauXThang(int);
 	double laiNoSauXThang(int);
+	void xuatThongTinNo();
 };
 #endif // !NoNamRuoi_h
 

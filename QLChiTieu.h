@@ -35,17 +35,18 @@ public:
 
 	void tinhTienDuTruVaTienGuiHangThang(int thangX);
 
-	void moTKTietKiem(int thangX);
+	void moTKTietKiem();
 	//Cập nhật các STK bao gồm số tháng gửi, tất toán STK ...
-	void capNhatCacTKTietKiem();
+	void capNhatSoThangDaGuiCuaTKTietKiem();
+	void tatToanCacTKTietKiem();
 
 	//Xuất đánh giá thu chi
 	bool xuatvaDanhGiaThuChi(int thangX);
 	
 	double tinhTongTienTKSauXThang(int thangX);
 
-	void traNoNamRuoi(int thangX);
-	void traNoBaNam(int thangX);
+	double traNoNamRuoi(int thangX);
+	double traNoBaNam(int thangX);
 	//Hàm tổng hợp các xử lý của QLChiTieu
 	void xuLyQLChiTieu();
 };

@@ -37,7 +37,7 @@ void nhapThuNhap() {
 	
 }
 void ThuNhap::xuatThuNhap() {
-	cout << "+ Tong luong: " << this->luong << endl;
-	cout << "+ Thu nhap khac: " << this->thuNhapKhac << endl;
+	cout << "+ Tong luong: " << this->luong << " trieu vnd" << endl;
+	cout << "+ Thu nhap khac: " << this->thuNhapKhac << " trieu vnd" << endl;
 }
 ThuNhap::~ThuNhap(){}

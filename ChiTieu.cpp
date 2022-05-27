@@ -17,9 +17,9 @@ void ChiTieu::nhapChiTieu()
 	cin >> this->khac;
 }
 void ChiTieu::xuatChiTieu() {
-	cout << "- Tien an, uong: " << this->anUong << endl;
-	cout << "- Tien dien, nuoc: " << this->dienNuoc << endl;
-	cout << "- Chi tieu khac: " << this->khac << endl;
+	cout << "- Tien an, uong: " << this->anUong << " trieu vnd" << endl;
+	cout << "- Tien dien, nuoc: " << this->dienNuoc << " trieu vnd" << endl;
+	cout << "- Chi tieu khac: " << this->khac << " trieu vnd" << endl;
 }
 double ChiTieu::tinhTongChiTieu()
 {

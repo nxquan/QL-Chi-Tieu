@@ -8,7 +8,7 @@ int main()
 	QLChiTieu QL_Chi_Tieu;
 	QL_Chi_Tieu.xuLyQLChiTieu();
 
-	return 1;
+	return 0;
 
 }
 

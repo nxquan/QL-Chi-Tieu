@@ -14,9 +14,10 @@ public:
 	void ganNgayMuonNo(string);
 	virtual void ganLaiSuat() = 0;
 	virtual void nhapKhoanNo() = 0;
-	virtual double tinhTongNo() = 0;
+	/*virtual double tinhTongNo() = 0;*/
 	virtual double tinhTongNoSauXThang(int) = 0;
 	virtual double laiNoSauXThang(int) = 0;
+	virtual void xuatThongTinNo() = 0;
 };
 #endif // !TienNo_h
 
