@@ -1,3 +1,9 @@
+## Thực hiện: NHÓM 3, CA 1
+## Thành viên:
+#1. Võ Thành Phong: 20120547
+#2. Nguyễn Thị Cẩm Lai: 20120128
+#3. Nguyễn Xuân Quân: 20120555
+
 # Phần mềm quản lý chi tiêu cho 2 vợ chồng
 1. Quản lý thu - chi hàng tháng 
 2. Gửi tiết kiệm để trả nợ
