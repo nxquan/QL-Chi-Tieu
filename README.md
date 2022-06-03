@@ -13,3 +13,4 @@ Xuất menu ra màn hình gồm:
 4. Trả nợ 3 năm
 5. Dự đoán tháng trả được nợ nếu tiếp tục tính toán dựa trên tháng vừa nhập
 6. Nhập thu - chi tháng tiếp theo
+7. Ghi dữ liệu ra file csv
