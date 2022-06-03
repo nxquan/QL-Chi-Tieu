@@ -8,8 +8,8 @@ Xuất menu ra màn hình gồm:
 1. Nhập thu - chi tháng
 2. Xuất đánh giá thu - chi tháng x
 3. Xuất đánh giá thu, chi va tong no tai thang x
-4. Trả nợ 1.5 năm
-5. Trả nợ 3 năm
+4. Xem danh sach so tiet kiem 
+5. Xem thong tin cac khoan no 
 6. Dự đoán tháng trả nợ dựa trên tháng mới nhất
 7. Ghi dữ liệu ra file(.csv)
 
