@@ -13,8 +13,8 @@ Thành viên:
  1. Nhập thu - chi tháng
  2. Xuất đánh giá thu - chi tháng x
  3. Xuất đánh giá thu, chi va tong no tai thang x
- 4. Xem danh sach so tiet kiem 
- 5. Xem thong tin cac khoan no 
+ 4. Xem danh sách các sổ tiết kiệm
+ 5. Xem thông tin các khoản nợ
  6. Dự đoán tháng trả nợ dựa trên tháng mới nhất
  7. Ghi dữ liệu ra file(.csv)
 
