@@ -86,6 +86,7 @@ void TKTietKiem::xuatThongTin()
 {
 	cout << "Tien gui: " << this->tienGui << " trieu vnd" << endl;
 	cout << "Ki han: " << this->kiHan << endl;
+	cout << "Lai suat (%/Tong tien): " << this->laiSuat*100 << endl;
 	cout << "Ngay gui: " << this->ngayGui << endl;
 	cout << "So thang da gui: " << this->laySoThangDaGui() << endl;
 	cout << "Ngay dao han: " << this->ngayDaoHan << endl;
@@ -95,13 +96,16 @@ void TKTietKiem::xuatThongTin()
 void TKTietKiem::ghiFile(ostream& os)
 {
 	double tien = 0;
-	if (this->daTatToan = true) {
+	string tatToan = "";
+	if (this->daTatToan == true) {
 		tien = this->tattoanTKTietKiem();
+		tatToan = "Da tat toan";
 	}
 	else {
 		tien = this->tienGui;
+		tatToan = "Chua tat toan";
 	}
-	os << this->ngayGui << "," << this->ngayDaoHan << "," << this->tienGui << "," << this->laiSuat*100 << "," << this->kiHan << "," << this->soThangDaGui << "," << tien << endl;
+	os << this->ngayGui << "," << this->ngayDaoHan << "," << this->tienGui << "," << this->laiSuat*100 << "," << this->kiHan << "," << this->soThangDaGui << "," << tatToan << "," << tien << endl;
 }
 
 double TKTietKiem::tattoanTKTietKiem()

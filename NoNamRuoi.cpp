@@ -50,11 +50,11 @@ void NoNamRuoi::nhapKhoanNo()
 
 void NoNamRuoi::ghiFile(ostream& myfile) {
 	myfile << "TIEN NO 1.5 NAM\n";
-	myfile << "Thang, Tien muon, Ngay muon, Ngay tra, Lai xuat, Tien no trong thang, Tong lai no sau x thang, Tong no sau x thang\n";
+	myfile << "Thang, Tien muon, Ngay muon, Ngay tra, Lai suat(%), Tien no trong thang, Tong lai no sau x thang, Tong no sau x thang\n";
 	myfile << "" << "," << this->layTienNoGoc() << "," << this->layNgayMuonNo() << "," << this->layNgayDaoHan() << "," << "" << "," << "" << "," << "" << "," << "" << "\n";
 	for (int i = 0; i < this->laiSuat.size(); i++)
 	{
-		myfile << i + 1 << "," << "" << "," << "" << "," << "" << "," << this->layLaiSuat().at(i) << "," << this->layTienNoOThangThuX(i+1) << "," << this->laiNoSauXThang(i+1) << "," << this->tinhTongNoSauXThang(i+1) << "\n";
+		myfile << i + 1 << "," << "" << "," << "" << "," << "" << "," << this->layLaiSuat().at(i)*100 << "," << this->layTienNoOThangThuX(i+1) << "," << this->laiNoSauXThang(i+1) << "," << this->tinhTongNoSauXThang(i+1) << "\n";
 
 	}
 	myfile << endl;

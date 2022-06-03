@@ -119,7 +119,7 @@ void QLChiTieu::moTKTietKiem() {
 		return;
 	}
 	int choose = 0;
-	cout <<"\n==>> So tien du trong thang: "<<this->tienGuiTietKiem[this->tienGuiTietKiem.size() - 1]<<" trieu" <<"\n\n";
+	cout <<"\n==>> So tien gui trong thang: "<<this->tienGuiTietKiem[this->tienGuiTietKiem.size() - 1]<<" trieu" <<"\n\n";
 	cout << "=======CHON HINH THUC GUI TIET KIEM=======" << endl;
 	cout << "*1. 6 thang- Lai suat 6%/tong tien gui   *" << endl;
 	cout << "*2. 12 thang- Lai suat 6.5%/tong tien gui*" << endl;
@@ -251,11 +251,11 @@ bool QLChiTieu::xuatvaDanhGiaThuChi_LaiNo(int thangX) {
 	double check = this->tienGuiTietKiem[thangX - 1] - this->khoanNo[0]->layTienNoOThangThuX(thangX)
 		- this->khoanNo[1]->layTienNoOThangThuX(thangX);
 	if (check >= 0) {
-		cout << "==>> Thu-chi can doi, luong du - lai no =  " << check << " trieu" << endl;
+		cout << "==>> Thu-chi can doi, tong tien gui tiet kiem - tong tien no trong thang =  " << check << " trieu" << endl;
 		return true;
 	}
 	else {
-		cout << "==>> Thu-chi chua can doi, luong du - lai no = " << check << " trieu" << endl;
+		cout << "==>> Thu-chi chua can doi, am tien = " << -check << " trieu" << endl;
 		return false;
 	}
 }
@@ -559,7 +559,6 @@ void QLChiTieu::xuLyQLChiTieu() {
 		}
 		else if (choose == 6) {
 			this->duDoanTraNo();
-			system("pause");
 			choose2 = 0;
 		}
 		else if (choose == 7) {
@@ -606,7 +605,7 @@ bool QLChiTieu::ghiFileThuChi() {
 		return false;
 	}
 	string heading = "THANG, ,THU NHAP, , ,CHI TIEU, , , ,DANH GIA, , , ";
-	string subHeading = " ,Luong chong,Luong vo,TN khac,An uong,Dien nuoc, Chi tieu khac, ,Thu-Chi,Thu_Chi-Lai no, Tien du tru,Tien gui TK";
+	string subHeading = " ,Luong chong,Luong vo,TN khac,An uong,Dien nuoc, Chi tieu khac, ,Thu-Chi,Tong tien gui-Tong no trong thang, Tien du tru,Tien gui TK";
 
 	fout << heading << endl;
 	fout << subHeading << endl;
@@ -652,7 +651,7 @@ bool QLChiTieu::ghiFileThuChi() {
 		value += ngayGui + "," + to_string(lChong) + "," + to_string(lVo) + "," + to_string(TNK)
 			+ "," + to_string(anUong) + "," + to_string(dienNuoc) + "," + to_string(chiTieuKhac) + ", ,"
 			+ (tienDu > 0 ? "Hop ly" : "Chua hop ly_am: " + to_string(tienDu)) + ","
-			+ (tienDuLaiNo > 0 ? "Hop ly" : "Chua hop ly_am" + to_string(tienDu)) + ","
+			+ (tienDuLaiNo > 0 ? "Hop ly" : "Chua hop ly_am: " + to_string(tienDuLaiNo)) + ","
 			+ to_string(this->khoanDuTru[soThang - 1]) + "," + to_string(this->tienGuiTietKiem[soThang - 1]);
 		fout << value << endl;
 	}
@@ -665,8 +664,12 @@ bool QLChiTieu::ghiFileTKTK()
 	if (fout.is_open() == false) {
 		return false;
 	}
+	fout << "TONG TIEN TIET KIEM GIA DINH NHAN DUOC:" << endl;
+	fout << "Trong 18 thang dau: " << "," << this->soTKGD[0] << endl;
+	fout << "Trong 18 thang sau: " << ", " << this->soTKGD[1] << endl;
+	fout << endl;
 	fout << "CAC KHOAN TIET KIEM:" << endl;
-	fout << "," << "Ngay gui" << "," << "Ngay dao han" << "," << "So tien gui" << "," << "Lai suat(%/ki han)" << "," << "Ki han" << "," << "So thang da gui" << "," << "Tong tien khi tat toan" << endl;
+	fout << "," << "Ngay gui" << "," << "Ngay dao han" << "," << "So tien gui" << "," << "Lai suat(%/ki han)" << "," << "Ki han" << "," << "So thang da gui" << "," << "Tinh trang tat toan" << "," << "Tong tien nhan duoc" << endl;
 	for (int i = 0; i < this->khoanTietKiem.size(); i++) {
 		fout << "SO THU " << i + 1 << ": "<<",";
 		this->khoanTietKiem[i].ghiFile(fout);

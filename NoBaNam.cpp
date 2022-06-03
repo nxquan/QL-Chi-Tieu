@@ -44,8 +44,8 @@ void NoBaNam::nhapKhoanNo()
 void NoBaNam:: ghiFile(ostream& myfile)
 {
 	myfile << "TIEN NO 3 NAM\n";
-	myfile << "Thang, Tien muon, Ngay muon, Ngay tra, Lai xuat, Tien no trong thang, Tong lai sau x thang, Tong no sau x thang\n";
-	myfile << "" << "," << this->layTienNoGoc() << "," << this->layNgayMuonNo() << "," << this->layNgayDaoHan() << "," << this->layLaiSuat().at(0) << "," << "" << "," << "" << "," << "" << "\n";
+	myfile << "Thang, Tien muon, Ngay muon, Ngay tra, Lai suat(%), Tien no trong thang, Tong lai sau x thang, Tong no sau x thang\n";
+	myfile << "" << "," << this->layTienNoGoc() << "," << this->layNgayMuonNo() << "," << this->layNgayDaoHan() << "," << this->layLaiSuat().at(0)*100 << "," << "" << "," << "" << "," << "" << "\n";
 	for (int i = 0; i < 36; i++)
 	{
 		myfile << i + 1 << "," << "" << "," << "" << "," << "" << "," << "" << "," << this->layTienNoOThangThuX(i + 1) << "," << this->laiNoSauXThang(i + 1) << "," << this->tinhTongNoSauXThang(i + 1) << "\n";
