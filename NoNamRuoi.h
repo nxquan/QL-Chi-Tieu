@@ -10,12 +10,18 @@ private:
 	vector<double>laiSuat;
 public:
 	NoNamRuoi();
-	void ganLaiSuat();
+	void nhapLaiSuat();
+	void ganLaiSuat(vector<double>);
+
+	vector<double> layLaiSuat();
+
 	void nhapKhoanNo();
-	/*double tinhTongNo();*/
+	double layTienNoOThangThuX(int);
 	double tinhTongNoSauXThang(int);
 	double laiNoSauXThang(int);
 	void xuatThongTinNo();
+	string layNgayDaoHan();
+	void ghiFile(ostream&);
 };
 #endif // !NoNamRuoi_h
 

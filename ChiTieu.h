@@ -15,6 +15,11 @@ public:
 	ChiTieu();
 	void nhapChiTieu();
 	void xuatChiTieu();
+
+	double layTienAnUong();
+	double layTienDienNuoc();
+	double layChiTieuKhac();
+
 	double tinhTongChiTieu();
 	~ChiTieu();
 };

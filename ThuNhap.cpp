@@ -16,15 +16,15 @@ ThuNhap::ThuNhap(double luongChong, double luongVo, double thuNhapKhac)
 
 void ThuNhap::nhapLuongVoChong()
 {
-	cout << "Nhap luong chong: ";
+	cout << "Nhap luong chong(Trieu VND): ";
 	cin >> this->luongChong;
-	cout << "Nhap luong vo: ";
+	cout << "Nhap luong vo(Trieu VND): ";
 	cin >> this->luongVo;
 }
 
 void ThuNhap::nhapThuNhapKhac()
 {
-	cout << "Nhap tong thu nhap khac: ";
+	cout << "Nhap tong thu nhap khac(Trieu VND): ";
 	cin >> this->thuNhapKhac;
 }
 
@@ -55,9 +55,9 @@ void ThuNhap::nhapThuNhap()
 }
 
 void ThuNhap::xuatThuNhap() {
-	cout << "+ Luong chong: " << this->luongChong << " Trieu" << endl;
-	cout << "+ Luong vo: " << this->luongVo << " Trieu" << endl;
-	cout << "+ Thu nhap khac: " << this->thuNhapKhac << " Trieu" << endl;
+	cout << "+ Luong chong: " << this->luongChong << " trieu" << endl;
+	cout << "+ Luong vo: " << this->luongVo << " trieu" << endl;
+	cout << "+ Thu nhap khac: " << this->thuNhapKhac << " trieu" << endl;
 }
 
 ThuNhap::~ThuNhap(){}

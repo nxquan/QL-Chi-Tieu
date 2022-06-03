@@ -11,7 +11,6 @@
 #include <string>
 using namespace std;
 
-
 class QLChiTieu
 {
 private:
@@ -21,8 +20,10 @@ private:
 	vector <double> tienGuiTietKiem;
 	vector <TKTietKiem> khoanTietKiem;
 	vector <TienNo*> khoanNo;
+	double soTKGD[2];
 public:
 	QLChiTieu();
+	QLChiTieu(vector<ThuNhap>, vector<ChiTieu>, vector<double>, vector<double>, vector<TKTietKiem>, vector<TienNo*>);
 	~QLChiTieu();
 
 	//Nhập các khoản nợ
@@ -32,7 +33,7 @@ public:
 
 	//Kiểm tra tháng đó có thu chi âm không?
 	vector<double> thuChiAm(int thangX);
-
+	double tinhTienDu(int thangX);
 	void tinhTienDuTruVaTienGuiHangThang(int thangX);
 
 	void moTKTietKiem();
@@ -42,13 +43,22 @@ public:
 
 	//Xuất đánh giá thu chi
 	bool xuatvaDanhGiaThuChi(int thangX);
-	
-	double tinhTongTienTKSauXThang(int thangX);
+	bool xuatvaDanhGiaThuChi_LaiNo(int thangX);
 
-	double traNoNamRuoi(int thangX);
-	double traNoBaNam(int thangX);
+	vector<double> traNoNamRuoi(int thangX);
+	vector<double> traNoBaNam(int thangX);
+	bool tinhTrangTraNo(int);
+
+	void duDoanTraNo();
 	//Hàm tổng hợp các xử lý của QLChiTieu
+
+	bool ghiFileThuChi();
+	bool ghiFileTKTK();
+	bool ghiFileNo();
+	bool ghiFile();
+
 	void xuLyQLChiTieu();
+
 };
 
 #endif // !QLChiTieu_h

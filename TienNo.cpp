@@ -15,3 +15,9 @@ void TienNo::ganNgayMuonNo(string ngayMuon)
 {
 	this->ngayMuonNo = ngayMuon;
 }
+double TienNo::layTienNoGoc() {
+	return this->tienNoGoc;
+}
+string TienNo::layNgayMuonNo() {
+	return this->ngayMuonNo;
+}

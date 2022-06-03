@@ -9,21 +9,29 @@ ChiTieu::ChiTieu()
 
 void ChiTieu::nhapChiTieu()
 {
-	cout << "Nhap tien an uong: ";
+	cout << "Nhap tien an uong(Trieu VND): ";
 	cin >> this->anUong;
-	cout << "Nhap tien dien nuoc: ";
+	cout << "Nhap tien dien nuoc(Trieu VND): ";
 	cin >> this->dienNuoc;
-	cout << "Nhap khoan tien khac: ";
+	cout << "Nhap khoan tien khac(Trieu VND): ";
 	cin >> this->khac;
 }
 void ChiTieu::xuatChiTieu() {
-	cout << "- Tien an, uong: " << this->anUong << " trieu vnd" << endl;
-	cout << "- Tien dien, nuoc: " << this->dienNuoc << " trieu vnd" << endl;
-	cout << "- Chi tieu khac: " << this->khac << " trieu vnd" << endl;
+	cout << "- Tien an, uong: " << this->anUong << " trieu" << endl;
+	cout << "- Tien dien, nuoc: " << this->dienNuoc << " trieu" << endl;
+	cout << "- Chi tieu khac: " << this->khac << " trieu" << endl;
 }
 double ChiTieu::tinhTongChiTieu()
 {
 	return this->anUong + this->dienNuoc + this->khac;
 }
-
+double ChiTieu::layTienAnUong() {
+	return this->anUong;
+}
+double ChiTieu::layTienDienNuoc() {
+	return this->dienNuoc;
+}
+double ChiTieu::layChiTieuKhac() {
+	return this->khac;
+}
 ChiTieu::~ChiTieu(){}
